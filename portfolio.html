@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stable Header, Footer, and Body Space</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+    <style>
+      /* Add this CSS block for button hover effect */
+      .btn-outline-primary:hover {
+        background-color: #0077b5;
+        color: #fff;
+        /* Change the text color on hover to white */
+      }
+
+      /* Set a fixed height for the section content container */
+      .section-content {
+        height: calc(
+          100vh - 68px
+        ); /* Adjust the height to account for button container height */
+        overflow-y: auto;
+      }
+
+      /* Custom CSS for container height and image fit */
+      .container-half-height {
+        height: 50vh; /* Set the container height to 50% of the viewport height */
+      }
+
+      .image-container {
+        /* Make the image fit inside the container */
+        object-fit: contain;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+
+  <body
+    class="d-flex flex-column"
+    style="font-family: Arial, sans-serif; margin: 0; padding: 0; height: 100vh"
+  >
+    <div class="p-2 flex-row d-flex">
+      <div class="bg-succes flex-grow-1"><h1>Software developer</h1></div>
+      <div>
+        <button type="button" class="btn" onclick="showSection('education')">
+          Education
+        </button>
+        <button type="button" class="btn" onclick="showSection('Projects')">
+          Projects
+        </button>
+        <button type="button" class="btn" onclick="showSection('experience')">
+          Experience
+        </button>
+        <button type="button" class="btn" onclick="showSection('Blogs')">
+          Blogs
+        </button>
+      </div>
+    </div>
+
+    <!-- Section content container -->
+    <div class="p-5 flex-grow-1 section-content">
+      <!-- profile -->
+      <div class="mt-4 container-fluid card">
+        <div class="row">
+          <!-- Left-side content column -->
+          <div class="col-md-6 mx-auto justify-content-center">
+            <!-- Add text-center class here -->
+            <div class="p-4">
+              <h1><b>ARAVINDAN M</b></h1>
+              <h4>ABOUT</h4>
+              <h5>
+                A computer science graduate, who has a year of work experience
+                in the software development, and has a keen interest to solve
+                business problems using software tools, a good team player who
+                strives to caters best for the company associated and an
+                effective communicator with an optimistic mindset, always
+                willing to learn and adapt to the new technologies and implement
+                them in the workspace, fast-paced and deadline-driven to
+                completion within the constraints.
+              </h5>
+            </div>
+          </div>
+          <!-- Right-side image column -->
+          <div class="col-md-6">
+            <div class="image-container">
+              <img
+                src="sitting.png"
+                alt="Image description"
+                class="img-fluid"
+                style="height: 400px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Section -->
+      <div
+        class="mt-4 container-fluid card section education"
+        id="education-section"
+      >
+        <div class="row">
+          <!-- Right-side image column -->
+          <div class="col-md-6">
+            <div class="image-container justify-content-center align-items-center">
+              <img
+                src="education.jpg"
+                alt="Image description"
+                class="img-fluid"
+                style="height: 400px"
+              />
+            </div>
+          </div>
+          <!-- Left-side content column -->
+          <div class="col-md-6 mx-auto justify-content-center">
+            <!-- Add text-center class here -->
+            <div class="p-4 ">
+              <h1><b>Education</b></h1>
+              <div class="p-4" style="border-left: 2px solid black">
+                <h6><b>10th</b></h6>
+                <h6>JOHN DEWEY MATRIC HIGHER SEC SCHOOL, PANRUTI</h6>
+                <h6>July 2018 - July 2019</h6>
+              </div>
+              <div class="p-4" style="border-left: 2px solid black">
+                <h6><b>12th</b></h6>
+                <h6>JOHN DEWEY MATRIC HIGHER SEC SCHOOL, PANRUTI</h6>
+                <h6>July 2018 - July 2019</h6>
+              </div>
+              <div class="p-4" style="border-left: 2px solid black">
+                <h6><b>BTECH - IT</b></h6>
+                <h6>ST JOSEPH'S INSTITUTE OF TECHNOLOGY, OMR, CHENNAI</h6>
+                <h6>July 2019 - April 2023</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Projects Section -->
+      <div
+        class="mt-4 container-fluid card section Projects"
+        id="Projects-section"
+      >
+        <div class="row">
+          <!-- Left-side content column -->
+          <div class="col-md-6 mx-auto justify-content-center">
+            <!-- Add text-center class here -->
+            <div class="p-4">
+              <h1><b>Projects</b></h1>
+              <div class="p-4" >
+                <h6><b>Cloth Motif Recognition</b></h6>
+                <h6> Clicking an image predicts the Sale
+                </h6>
+                <h6>Using Python, Roboflow,  Matlab</h6>
+              </div>
+              <div class="p-4" >
+                <h6><b>Person Centered Plan </b></h6>
+                <h6> Getting Personal Data of the Disabled Person 
+                </h6>
+                <h6>Using  Angular, Bootstrap, CSS, Mysql, Dotnet Core, C#, Git</h6>
+              </div>
+              <div class="p-4" >
+                <h6><b>Quanto</b></h6>
+                <h6>ERP Software  </h6>
+                <h6>Using  ReactNative, Type Script,  Mysql, Dotnet Core, Git, Redux</h6>
+              </div>
+            </div>
+          </div>
+          <!-- Right-side image column -->
+          <div class="col-md-6" >
+            <div class="image-container justify-content-center align-items-center" >
+              <img
+                src="projectt.jpg"
+                alt="Image description"
+                class="img-fluid"
+                style="height: 400px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Section -->
+      <div
+        class="mt-4 container-fluid card section experience"
+        id="experience-section"
+      >
+        <div class="row">
+          <!-- Right-side image column -->
+          <div class="col-md-6">
+            <div class="image-container">
+              <img
+                src="experience.jpg"
+                alt="Image description"
+                class="img-fluid"
+                style="height: 400px"
+              />
+            </div>
+          </div>
+          <!-- Left-side content column -->
+          <div class="col-md-6 mx-auto justify-content-center">
+            <!-- Add text-center class here -->
+            <div class="p-4">
+              <h1><b>Experience</b></h1>
+             
+              <div class="p-4" style="border-left: 2px solid black">
+                <h6><b>Kareinfinity</b></h6>
+                <h6>MAR 2023 - PRESENT</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blogs Section -->
+      <div
+        class="mt-4 container-fluid card section Blogs"
+        id="Blogs-section"
+      >
+        <div class="row">
+          <!-- Left-side content column -->
+          <div class="col-md-6 mx-auto justify-content-center">
+            <!-- Add text-center class here -->
+            <div class="p-4">
+              <h1><b>Blogs</b></h1>
+              <a href="https://aravindanmuthukumaran.blogspot.com/2022/06/coding.html" class="btn text-primary btn-lg" target="_blank">
+               Coding
+              </a>
+              <a href="https://aravindanmuthukumaran.blogspot.com/2023/02/setup-local-git-hub-and-connect-to.html" class="btn text-primary btn-lg" target="_blank">
+                Setup local git hub and connect to the repository for windows
+               </a>
+               <a href="https://aravindanmuthukumaran.blogspot.com/2023/02/how-to-convert-development-code-into.html" class="btn text-primary btn-lg" target="_blank">
+                How to convert development code into production build in node
+               </a>
+               <a href="https://aravindanmuthukumaran.blogspot.com/2023/02/git-commit-step-by-step-command.html" class="btn text-primary btn-lg" target="_blank">
+                Git commit step by step command
+               </a>
+               <a href="https://aravindanmuthukumaran.blogspot.com/2023/02/carousal-view-in-bootstrap-typescript.html" class="btn text-primary btn-lg" target="_blank">
+                Carousal View in Bootstrap Typescript
+               </a>
+            </div>
+          </div>
+          <!-- Right-side image column -->
+          <div class="col-md-6">
+            <div class="image-container">
+              <img
+                src="blog.jpg"
+                alt="Image description"
+                class="img-fluid"
+                style="height: 400px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Flex item 3 (Bottom content) -->
+    <div class="p-2">
+        <div class="container  text-center">
+            <a href="mailto:aravindan9302@gmail.com" class="btn text-primary">
+                <i class="fas fa-envelope fa-2x"></i>
+              </a>
+            <a href="https://api.whatsapp.com/send?phone=8270612215" target="_blank" class="btn  text-success">
+                <i class="fab fa-whatsapp fa-2x"></i>
+              </a>
+          
+              <!-- Facebook icon -->
+              <!-- <a href="https://www.facebook.com/YOUR_FACEBOOK_PAGE" target="_blank" class="btn  text-primary">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a> -->
+          
+              <!-- Instagram icon -->
+              <a href="https://www.instagram.com/aravindan_muthukumaran" target="_blank" class="btn  text-danger">
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+          </div>
+    </div>
+
+    <script>
+      function showSection(sectionName) {
+        const sections = document.querySelectorAll(".section");
+        sections.forEach((section) => section.classList.remove("active"));
+
+        const selectedSection = document.querySelector("." + sectionName);
+        selectedSection.classList.add("active");
+
+        // Scroll to the selected section
+        const targetSection = document.getElementById(sectionName + "-section");
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
