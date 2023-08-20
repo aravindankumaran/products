@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Stable Header, Footer, and Body Space</title>
+    <title>TOJO</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -64,44 +64,54 @@
     style="font-family: Arial, sans-serif; margin: 0; padding: 0; height: 100vh"
   >
     <div class="p-2 flex-row d-flex">
-      <div class="bg-succes flex-grow-1"><h1>Software developer</h1></div>
-      <div>
-        <button type="button" class="btn" onclick="showSection('education')">
-          Education
+      <div class="bg-succes flex-grow-1">
+        <h1 class="mx-5"><b>TOJO</b></h1>
+      </div>
+      <div class="mx-5">
+        <button type="button" class="btn" onclick="showSection('Home')">
+          Home
         </button>
-        <button type="button" class="btn" onclick="showSection('Projects')">
-          Projects
+        <button type="button" class="btn" onclick="showSection('Services')">
+          Services
         </button>
-        <button type="button" class="btn" onclick="showSection('experience')">
+        <!-- <button type="button" class="btn" onclick="showSection('experience')">
           Experience
         </button>
         <button type="button" class="btn" onclick="showSection('Blogs')">
           Blogs
-        </button>
+        </button> -->
       </div>
     </div>
 
     <!-- Section content container -->
     <div class="p-5 flex-grow-1 section-content">
       <!-- profile -->
-      <div class="mt-4 container-fluid card">
-        <div class="row">
+      <div
+        class="mt-4 container-fluid card section Home"
+        id="Home-section"
+      >
+        <div class="row justify-content-center align-items-center ">
           <!-- Left-side content column -->
           <div class="col-md-6 mx-auto justify-content-center">
             <!-- Add text-center class here -->
             <div class="p-4">
-              <h1><b>ARAVINDAN M</b></h1>
-              <h4>ABOUT</h4>
-              <h5>
-                A computer science graduate, who has a year of work experience
-                in the software development, and has a keen interest to solve
-                business problems using software tools, a good team player who
-                strives to caters best for the company associated and an
-                effective communicator with an optimistic mindset, always
-                willing to learn and adapt to the new technologies and implement
-                them in the workspace, fast-paced and deadline-driven to
-                completion within the constraints.
-              </h5>
+              <h1><b>END-TO-END PRODUCT ENGINEERING</b></h1>
+
+              <h5>Entrust a dedicated team, to Create a Customized</h5>
+              <h5>Product, for your Enterprise needs.</h5>
+            </div>
+            <div class="p-4">
+              <h5>Contact us:</h5>
+              <a href="mailto:tojoprivateltd@gmail.com" class="btn text-primary">
+                <i class="fas fa-envelope fa-2x"></i>
+              </a>
+              <a
+                href="https://api.whatsapp.com/send?phone=86010794562"
+                target="_blank"
+                class="btn text-success"
+              >
+                <i class="fab fa-whatsapp fa-2x"></i>
+              </a>
             </div>
           </div>
           <!-- Right-side image column -->
@@ -118,13 +128,14 @@
         </div>
       </div>
 
-      <!-- Education Section -->
+      <!-- Home Section -->
       <div
-        class="mt-4 container-fluid card section education"
-        id="education-section"
+        class="mt-4 container-fluid card section "
+      
       >
         <div class="row">
           <!-- Right-side image column -->
+          <!-- <h1><b>Home</b></h1> -->
           <div class="col-md-6">
             <div
               class="image-container justify-content-center align-items-center"
@@ -141,55 +152,67 @@
           <div class="col-md-6 mx-auto justify-content-center">
             <!-- Add text-center class here -->
             <div class="p-4">
-              <h1><b>Education</b></h1>
               <div class="p-4" style="border-left: 2px solid black">
-                <h6><b>10th</b></h6>
-                <h6>JOHN DEWEY MATRIC HIGHER SEC SCHOOL, PANRUTI</h6>
-                <h6>July 2018 - July 2019</h6>
+                <!-- <h1><b>Home</b></h1> -->
+                <h1><b>Vision :</b></h1>
+
+                <h6>
+                  To help businesses, realize the importance to adopt & embrace
+                  Information Technology, and journey with us to achieve the
+                  results together
+                </h6>
               </div>
               <div class="p-4" style="border-left: 2px solid black">
-                <h6><b>12th</b></h6>
-                <h6>JOHN DEWEY MATRIC HIGHER SEC SCHOOL, PANRUTI</h6>
-                <h6>July 2018 - July 2019</h6>
+                <h1><b>Mission</b></h1>
+                <h6>
+                  Provide generic or bespoke IT solutions targeted at Apparel &
+                  Healthcare industry (B2C, B2B), thus help them achieve realize
+                  the advantage of enhancing business using IT
+                </h6>
+               
               </div>
-              <div class="p-4" style="border-left: 2px solid black">
-                <h6><b>BTECH - IT</b></h6>
-                <h6>ST JOSEPH'S INSTITUTE OF TECHNOLOGY, OMR, CHENNAI</h6>
-                <h6>July 2019 - April 2023</h6>
-              </div>
+              
             </div>
           </div>
         </div>
       </div>
-      <!-- Projects Section -->
+      <!-- Services Section -->
       <div
-        class="mt-4 container-fluid card section Projects"
-        id="Projects-section"
+        class="mt-4 container-fluid card section Services"
+        id="Services-section"
       >
         <div class="row">
           <!-- Left-side content column -->
-          <div class="col-md-6 mx-auto justify-content-center">
+          <div class="col-md-3 mx-auto justify-content-center">
             <!-- Add text-center class here -->
+            <h4><b>Our End-to-End Full Stack Services:</b></h4>
             <div class="p-4">
-              <h1><b>Projects</b></h1>
+              
               <div class="p-4">
-                <h6><b>Cloth Motif Recognition</b></h6>
-                <h6>Clicking an image predicts the Sale</h6>
-                <h6>Using Python, Roboflow, Matlab</h6>
+                <h4>Complete Web App Development</h4>
+                </h4>
+            
               </div>
               <div class="p-4">
-                <h6><b>Person Centered Plan </b></h6>
-                <h6>Getting Personal Data of the Disabled Person</h6>
-                <h6>
-                  Using Angular, Bootstrap, CSS, Mysql, Dotnet Core, C#, Git
-                </h6>
+                <h4>App Support And Maintain </h4>
+                
+              </div>
+             
+            </div>
+          </div>
+
+          <div class="col-md-3 mx-auto justify-content-center">
+            <!-- Add text-center class here -->
+            <h4 class="text-white">................................................................................</h4>
+            <div class="p-4">
+             
+              <div class="p-4">
+                <h4>Deployment Automation</h4>
+               
               </div>
               <div class="p-4">
-                <h6><b>Quanto</b></h6>
-                <h6>ERP Software</h6>
-                <h6>
-                  Using ReactNative, Type Script, Mysql, Dotnet Core, Git, Redux
-                </h6>
+                <h4>Digital Transformation</h4>
+               
               </div>
             </div>
           </div>
@@ -210,12 +233,12 @@
       </div>
 
       <!-- Experience Section -->
-      <div
+      <!-- <div
         class="mt-4 container-fluid card section experience"
         id="experience-section"
       >
         <div class="row">
-          <!-- Right-side image column -->
+          Right-side image column
           <div class="col-md-6">
             <div class="image-container">
               <img
@@ -226,9 +249,9 @@
               />
             </div>
           </div>
-          <!-- Left-side content column -->
+          Left-side content column
           <div class="col-md-6 mx-auto justify-content-center">
-            <!-- Add text-center class here -->
+            Add text-center class here
             <div class="p-4">
               <h1><b>Experience</b></h1>
 
@@ -239,81 +262,24 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <!-- Blogs Section -->
-      <div class="mt-4 container-fluid card section Blogs" id="Blogs-section">
-        <div class="row">
-          <!-- Left-side content column -->
-          <div class="col-md-6 mx-auto justify-content-center">
-            <!-- Add text-center class here -->
-            <div class="p-4">
-              <h1><b>Blogs</b></h1>
-              <a
-                href="https://aravindanmuthukumaran.blogspot.com/"
-                class="btn text-primary btn-lg"
-                target="_blank"
-              >
-                Google Blogs
-              </a>
-              <a
-                href="https://aravindanmuthukumaran.blogspot.com/2023/02/setup-local-git-hub-and-connect-to.html"
-                class="btn text-primary btn-lg"
-                target="_blank"
-              >
-                Setup local git hub and connect to the repository for windows
-              </a>
-              <a
-                href="https://aravindanmuthukumaran.blogspot.com/2023/02/how-to-convert-development-code-into.html"
-                class="btn text-primary btn-lg"
-                target="_blank"
-              >
-                How to convert development code into production build in node
-              </a>
-              <a
-                href="https://aravindanmuthukumaran.blogspot.com/2023/02/git-commit-step-by-step-command.html"
-                class="btn text-primary btn-lg"
-                target="_blank"
-              >
-                Git commit step by step command
-              </a>
-              <a
-                href="https://aravindanmuthukumaran.blogspot.com/2023/02/carousal-view-in-bootstrap-typescript.html"
-                class="btn text-primary btn-lg"
-                target="_blank"
-              >
-                Carousal View in Bootstrap Typescript
-              </a>
-            </div>
-          </div>
-          <!-- Right-side image column -->
-          <div class="col-md-6">
-            <div class="image-container">
-              <img
-                src="https://raw.githubusercontent.com/aravindan-kareinfinity/resume/main/blog.jpg"
-                alt="Image description"
-                class="img-fluid"
-                style="height: 400px"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+  
     </div>
 
     <!-- Flex item 3 (Bottom content) -->
-    <div class="p-2">
+    <!-- <div class="p-2">
       <div class="container text-center">
-        <a href="mailto:aravindan9302@gmail.com" class="btn text-primary">
+        <a href="mailto:tojoprivateltd@gmail.com" class="btn text-primary">
           <i class="fas fa-envelope fa-2x"></i>
         </a>
         <a
-          href="https://api.whatsapp.com/send?phone=8270612215"
+          href="https://api.whatsapp.com/send?phone=86010794562"
           target="_blank"
           class="btn text-success"
         >
           <i class="fab fa-whatsapp fa-2x"></i>
-        </a>
+        </a> -->
 
         <!-- Facebook icon -->
         <!-- <a href="https://www.facebook.com/YOUR_FACEBOOK_PAGE" target="_blank" class="btn  text-primary">
@@ -321,22 +287,23 @@
               </a> -->
 
         <!-- Instagram icon -->
-        <a
+        <!-- <a
           href="https://www.instagram.com/aravindan_muthukumaran"
           target="_blank"
           class="btn text-danger"
         >
           <i class="fab fa-instagram fa-2x"></i>
-        </a>
+        </a> -->
 
-        <a
-          href="https://docs.google.com/document/d/19xcp6UDktsX0HcWBFw1gxMIE-nw1Q_LT20-qWR8kf0M/edit?usp=sharing"
+        <!-- <a
+          href="https://github.com/aravindankumaran/portfolio/blob/main/Resume.pdf"
           target="_blank"
+          download="AravindanMuthukumran_resume.pdf"
           class="btn text-warning"
         >
-          <i class="far fa-file-pdf fa-2x"></i>
-        </a>
-      </div>
+          <i class="far fa-file-pdf fa-2x"></i> Download PDF
+        </a> -->
+      <!-- </div> -->
     </div>
 
     <script>
