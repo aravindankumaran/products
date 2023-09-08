@@ -3,332 +3,217 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TOJO</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
+    <title>Cashew Panruti | MSK Cashew</title>
+    <!-- Include Bootstrap CSS -->
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-
-    <!-- Include Font Awesome CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-      /* Add this CSS block for button hover effect */
-      .btn-outline-primary:hover {
-        background-color: #0077b5;
-        color: #fff;
-        /* Change the text color on hover to white */
-      }
+      /* Custom CSS for controlling scrolling speed */
+      /* .custom-marquee {
+        animation: marquee 10s linear infinite;
+      } */
 
-      /* Set a fixed height for the section content container */
-      .section-content {
-        height: calc(
-          100vh - 68px
-        ); /* Adjust the height to account for button container height */
-        overflow-y: auto;
-      }
-
-      /* Custom CSS for container height and image fit */
-      .container-half-height {
-        height: 50vh; /* Set the container height to 50% of the viewport height */
-      }
-
-      .image-container {
-        /* Make the image fit inside the container */
-        object-fit: contain;
-      }
-
-      .image-container img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
       }
     </style>
   </head>
+  <body class="d-flex flex-column min-vh-100" style="overflow-x: hidden  background-color: rgb(232, 230, 220);">
+    
+   
 
-  <body
-    class="d-flex flex-column"
-    style="font-family: Arial, sans-serif; margin: 0; padding: 0; height: 100vh"
-  >
-    <div class="p-2 flex-row d-flex">
-      <div class="bg-succes flex-grow-1">
-        <h1 class="mx-5"><b>TOJO</b></h1>
-      </div>
-      <div class="mx-5">
-        <button type="button" class="btn" onclick="showSection('Home')">
-          Home
-        </button>
-        <button type="button" class="btn" onclick="showSection('Services')">
-          Services
-        </button>
-        <!-- <button type="button" class="btn" onclick="showSection('experience')">
-          Experience
-        </button>
-        <button type="button" class="btn" onclick="showSection('Blogs')">
-          Blogs
-        </button> -->
+<!-- <img src="frontimage.png" alt="Image Description" class="img-fluid">
+
+   -->
+<div style="background-image: url('frontimage.png'); height: 100vh; background-size: cover; background-repeat: no-repeat; display: flex; justify-content: center; align-items: center; text-align: center;">
+    <h1 style="color: #799956">Msk cashew Panruti</h1>
+</div>
+
+
+   
+
+    <div class="p-5" style="min-height: 20rem ;  background-image: url('bg.png');">
+      <div class="row">
+        <!-- Left Div with Tab Buttons -->
+        <div
+          class="col-sm-3 d-flex flex-column justify-content-center align-items-center"
+          id="leftDiv"
+        >
+          <ul class="nav flex-column">
+            <!-- Buttons will be created dynamically after JSON data is loaded -->
+          </ul>
+        </div>
+        <!-- Right Div to Display Company Details -->
+        <div class="col-md-9" id="rightDiv">
+          <!-- Data will be displayed here -->
+        </div>
       </div>
     </div>
 
-    <!-- Section content container -->
-    <div class="p-5 flex-grow-1 section-content">
-      <!-- profile -->
-      <div
-        class="mt-4 container-fluid card section Home"
-        id="Home-section"
-      >
-        <div class="row justify-content-center align-items-center ">
-          <!-- Left-side content column -->
-          <div class="col-md-6 mx-auto justify-content-center">
-            <!-- Add text-center class here -->
-            <div class="p-4">
-              <h1><b>END-TO-END PRODUCT ENGINEERING</b></h1>
+    <div class="container-fluid" style=" background-image: url('bg.png');">
+      <div class="row">
+        <div class="col-sm-12">
+          <marquee behavior="scroll" direction="left" class="custom-marquee">
+            <h3 style="color: #008000">
+              <i class="fas fa-truck" style="transform: scaleX(-1)"></i>
+              Free Shipping on Orders Above ₹3999
+            </h3>
+          </marquee>
+        </div>
+      </div>
+    </div>
 
-              <h5>Entrust a dedicated team, to Create a Customized</h5>
-              <h5>Product, for your Enterprise needs.</h5>
-            </div>
-            <div class="p-4">
-              <h5>Contact us:</h5>
-              <a href="mailto:matrix@tojodev.com" class="btn text-primary">
-                <i class="fas fa-envelope fa-2x"></i>
-              </a>
-              <a
-                href="https://api.whatsapp.com/send?phone=+918072769573"
-                target="_blank"
-                class="btn text-success"
+    <h1 class="mb-0 px-5" style="background-image: url('bg.png'); margin-bottom: 0;">Products</h1>
+    <div class="p-5 flex-grow-1" style=" background-image: url('bg.png');">
+      <div class="row" id="productList" style=" background-image: url('bg.png');">
+        <!-- Products will be added here -->
+      </div>
+    </div>
+
+    <footer class="bg-dark text-light "  >
+      <div class="container-fluid">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-6">
+            <p class="text-left">&copy; 2023 TOJO PRIVATE LTD</p>
+          </div>
+          <div class="col-md-6">
+            <p class="text-right">
+              Follow Us: <a href="#">Facebook</a> |
+              <a href="https://www.instagram.com/aravindan_muthukumaran"
+                >Twitter</a
               >
-                <i class="fab fa-whatsapp fa-2x"></i>
-              </a>
-            </div>
-          </div>
-          <!-- Right-side image column -->
-          <div class="col-md-6">
-            <div class="image-container">
-              <img
-                src="https://raw.githubusercontent.com/aravindan-kareinfinity/resume/main/sitting.png"
-                alt="Image description"
-                class="img-fluid"
-                style="height: 400px"
-              />
-            </div>
+              | <a href="#">Instagram</a> |
+              <a href="https://api.whatsapp.com/send?phone=8270612215&text=Hi"
+                >WhatsApp</a
+              >
+            </p>
           </div>
         </div>
       </div>
-
-      <!-- Home Section -->
-      <div
-        class="mt-4 container-fluid card section "
-      
-      >
-        <div class="row">
-          <!-- Right-side image column -->
-          <!-- <h1><b>Home</b></h1> -->
-          <div class="col-md-6">
-            <div
-              class="image-container justify-content-center align-items-center"
-            >
-              <img
-                src="https://raw.githubusercontent.com/aravindan-kareinfinity/resume/main/education.jpg"
-                alt="Image description"
-                class="img-fluid"
-                style="height: 400px"
-              />
-            </div>
-          </div>
-          <!-- Left-side content column -->
-          <div class="col-md-6 mx-auto justify-content-center">
-            <!-- Add text-center class here -->
-            <div class="p-4">
-              <div class="p-4" style="border-left: 2px solid black">
-                <!-- <h1><b>Home</b></h1> -->
-                <h1><b>Vision :</b></h1>
-
-                <h6>
-                  To help businesses, realize the importance to adopt & embrace
-                  Information Technology, and journey with us to achieve the
-                  results together
-                </h6>
-              </div>
-              <div class="p-4" style="border-left: 2px solid black">
-                <h1><b>Mission</b></h1>
-                <h6>
-                  Provide generic or bespoke IT solutions targeted at Apparel &
-                  Healthcare industry (B2C, B2B), thus help them achieve realize
-                  the advantage of enhancing business using IT
-                </h6>
-               
-              </div>
-              
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Services Section -->
-      <div
-        class="mt-4 container-fluid card section Services"
-        id="Services-section"
-      >
-        <div class="row">
-          <!-- Left-side content column -->
-          <div class="col-md-3 mx-auto justify-content-center">
-            <!-- Add text-center class here -->
-            <h4><b>Our End-to-End Full Stack Services:</b></h4>
-            <div class="p-4">
-              
-              <div class="p-4">
-                <h4>Complete Web App Development</h4>
-                </h4>
-            
-              </div>
-              <div class="p-4">
-                <h4>App Support And Maintain </h4>
-                
-              </div>
-             
-            </div>
-          </div>
-
-          <div class="col-md-3 mx-auto justify-content-center">
-            <!-- Add text-center class here -->
-            <h4 class="text-white">................................................................................</h4>
-            <div class="p-4">
-             
-              <div class="p-4">
-                <h4>Deployment Automation</h4>
-               
-              </div>
-              <div class="p-4">
-                <h4>Digital Transformation</h4>
-               
-              </div>
-            </div>
-          </div>
-          <!-- Right-side image column -->
-          <div class="col-md-6">
-            <div
-              class="image-container justify-content-center align-items-center"
-            >
-              <img
-                src="https://raw.githubusercontent.com/aravindan-kareinfinity/resume/main/projectt.jpg"
-                alt="Image description"
-                class="img-fluid"
-                style="height: 400px"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Experience Section -->
-      <!-- <div
-        class="mt-4 container-fluid card section experience"
-        id="experience-section"
-      >
-        <div class="row">
-          Right-side image column
-          <div class="col-md-6">
-            <div class="image-container">
-              <img
-                src="https://raw.githubusercontent.com/aravindan-kareinfinity/resume/main/experience.jpg"
-                alt="Image description"
-                class="img-fluid"
-                style="height: 400px"
-              />
-            </div>
-          </div>
-          Left-side content column
-          <div class="col-md-6 mx-auto justify-content-center">
-            Add text-center class here
-            <div class="p-4">
-              <h1><b>Experience</b></h1>
-
-              <div class="p-4" style="border-left: 2px solid black">
-                <h6><b>Kareinfinity</b></h6>
-                <h6>MAR 2023 - PRESENT</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-  
-    </div>
-
-    <!-- Flex item 3 (Bottom content) -->
-    <!-- <div class="p-2">
-      <div class="container text-center">
-        <a href="mailto:tojoprivateltd@gmail.com" class="btn text-primary">
-          <i class="fas fa-envelope fa-2x"></i>
-        </a>
-        <a
-          href="https://api.whatsapp.com/send?phone=86010794562"
-          target="_blank"
-          class="btn text-success"
-        >
-          <i class="fab fa-whatsapp fa-2x"></i>
-        </a> -->
-
-        <!-- Facebook icon -->
-        <!-- <a href="https://www.facebook.com/YOUR_FACEBOOK_PAGE" target="_blank" class="btn  text-primary">
-                <i class="fab fa-facebook fa-2x"></i>
-              </a> -->
-
-        <!-- Instagram icon -->
-        <!-- <a
-          href="https://www.instagram.com/aravindan_muthukumaran"
-          target="_blank"
-          class="btn text-danger"
-        >
-          <i class="fab fa-instagram fa-2x"></i>
-        </a> -->
-
-        <!-- <a
-          href="https://github.com/aravindankumaran/portfolio/blob/main/Resume.pdf"
-          target="_blank"
-          download="AravindanMuthukumran_resume.pdf"
-          class="btn text-warning"
-        >
-          <i class="far fa-file-pdf fa-2x"></i> Download PDF
-        </a> -->
-      <!-- </div> -->
-    </div>
+    </footer>
 
     <script>
-      function showSection(sectionName) {
-        const sections = document.querySelectorAll(".section");
-        sections.forEach((section) => section.classList.remove("active"));
+      // Fetch data from the JSON file
+      fetch("productlist.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const productList = document.getElementById("productList");
+          const products = data.products; // Access the "products" array from the JSON data
 
-        const selectedSection = document.querySelector("." + sectionName);
-        selectedSection.classList.add("active");
+          // Loop through the products array and generate HTML elements for each product
+          products.forEach((product) => {
+            const productDiv = document.createElement("div");
+            productDiv.className = "col-md-4 mb-4";
 
-        // Scroll to the selected section
-        const targetSection = document.getElementById(sectionName + "-section");
-        targetSection.scrollIntoView({
-          behavior: "smooth",
+            // Add Bootstrap classes and custom styling to the product card
+            productDiv.innerHTML = `
+                        <div class="card h-100">
+                            <h5 class="card-title px-3 py-2">${
+                              product.productname
+                            }</h5>
+                            <img src="${product.imageSrc}" alt="${
+              product.productname
+            }" class="card-img-top" style="max-height: 200px; object-fit: contain;">
+                            <div class="card-body">
+                                <p class="card-text">${product.description}</p>
+                                <div class="d-flex justify-content-between">
+                                    <p class="card-text">Price: ₹${
+                                      product.price
+                                    }</p>
+                                    <p class="card-text">Discount Price: ₹${
+                                      product.discountprice
+                                    }</p>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://api.whatsapp.com/send?phone=8270612215&text=Hi%20there!%20I%20want%20to%20buy%20the%20product:%20${encodeURIComponent(
+                                  product.productname
+                                )}%20Price:%20₹${
+              product.price
+            }" target="_blank" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                    `;
+
+            // Append the product card to the productList container
+            productList.appendChild(productDiv);
+          });
+        })
+        .catch((error) => {
+          console.error("Error fetching data:", error);
         });
+
+      function updateRightDiv(tab, jsonData) {
+        const companyDetails = jsonData.companydetail.find(
+          (item) => item.Tab === tab
+        );
+        if (companyDetails) {
+          // Display company details in the right div
+          const html = `
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h3 class="mb-3">${companyDetails.Title}</h3>
+                                <p class="mb-3">${companyDetails.Date}</p>
+                                <p class="mb-3">${companyDetails.Description}</p>
+                            </div>
+                        </div>
+                    </div>
+                `;
+          document.getElementById("rightDiv").innerHTML = html;
+        } else {
+          // Handle the case where company details are not found
+          document.getElementById("rightDiv").innerHTML =
+            "<p>Company details not found.</p>";
+        }
       }
+
+      // Load JSON data from an external file
+      fetch("productlist.json")
+        .then((response) => response.json())
+        .then((jsonData) => {
+          // Create tab buttons dynamically based on JSON data
+          const leftDiv = document.getElementById("leftDiv");
+          const tabList = document.createElement("ul");
+          tabList.className = "nav flex-column";
+          jsonData.companydetail.forEach((item) => {
+            const tabButton = document.createElement("button");
+            tabButton.className = "btn btn-link";
+            tabButton.dataset.tab = item.Tab;
+            tabButton.textContent = item.Tab;
+            tabButton.addEventListener("click", () => {
+              updateRightDiv(item.Tab, jsonData);
+            });
+            const listItem = document.createElement("li");
+            listItem.className = "nav-item";
+            listItem.appendChild(tabButton);
+            tabList.appendChild(listItem);
+          });
+          leftDiv.appendChild(tabList);
+
+          // Load default tab on page load
+          updateRightDiv(jsonData.companydetail[0].Tab, jsonData);
+        })
+        .catch((error) => {
+          console.error("Error loading JSON data:", error);
+        });
     </script>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Include Bootstrap JS and Popper.js for Bootstrap components (if needed) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
